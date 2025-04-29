@@ -1,0 +1,294 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* FIXED: Added solid background with slight transparency */
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: var(--z-index-fixed);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  /* FIXED: Added shadow for better separation from content */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.scrolled {
+  box-shadow: var(--shadow-md);
+  border-bottom: 1px solid var(--border-color);
+  height: 70px; /* Slightly smaller when scrolled */
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+/* FIXED: Dark theme with better visibility */
+.dark-theme .navbar {
+  background-color: rgba(26, 26, 26, 0.9);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dark-theme .navbar.scrolled {
+  background-color: rgba(26, 26, 26, 0.95);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--spacing-md);
+  max-width: var(--container-width);
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+/* FIXED: Enhanced logo visibility */
+.logo {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: 1.5rem;
+  /* FIXED: Using direct color instead of variable for better visibility */
+  color: #333333;
+  text-decoration: none;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: var(--z-index-dropdown);
+  /* FIXED: Added text shadow for better contrast */
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+/* FIXED: Better dark mode visibility for logo */
+.dark-theme .logo {
+  color: #ffffff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.logo:hover {
+  color: var(--primary-color);
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-links {
+  display: flex;
+  gap: var(--spacing-md);
+  height: 100%;
+  align-items: center;
+}
+
+.nav-link-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* FIXED: Enhanced nav links with better visibility */
+.nav-links a {
+  /* FIXED: Using direct color instead of variable */
+  color: #333333;
+  /* FIXED: Increased font weight for better visibility */
+  font-weight: 700;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 var(--spacing-xs);
+  /* FIXED: Added text shadow for better contrast */
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+/* FIXED: Better dark mode link visibility */
+.dark-theme .nav-links a {
+  color: #ffffff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+}
+
+/* FIXED: Enhanced active state visibility */
+.nav-links a.active {
+  color: var(--primary-color);
+  font-weight: 800;
+}
+
+/* FIXED: Enhanced hover indicator */
+.link-hover-indicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius-full);
+}
+
+.navbar-social {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-left: var(--spacing-md);
+}
+
+/* FIXED: Enhanced social icons visibility and alignment */
+.navbar-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  /* FIXED: Direct background color for consistency */
+  background-color: #f0f0f0;
+  color: #333333;
+  /* FIXED: Added shadow for better visibility */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.dark-theme .navbar-social a {
+  background-color: #3a3a3a;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+  position: relative;
+  z-index: var(--z-index-dropdown);
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* FIXED: Enhanced mobile toggle visibility */
+.mobile-menu-toggle span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  /* FIXED: Using direct color for visibility */
+  background-color: #333333;
+  border-radius: var(--border-radius-full);
+  transform-origin: center;
+  /* FIXED: Added shadow for better visibility */
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+/* FIXED: Better dark mode toggle visibility */
+.dark-theme .mobile-menu-toggle span {
+  background-color: #ffffff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.mobile-menu-toggle.active span {
+  background-color: var(--primary-color);
+}
+
+/* FIXED: Improved mobile menu overlay */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  backdrop-filter: blur(4px);
+}
+
+@media (max-width: 991px) {
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  /* FIXED: Enhanced mobile menu visibility */
+  .navbar-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    max-width: 80%;
+    height: 100vh;
+    /* FIXED: More solid background for better visibility */
+    background-color: rgba(255, 255, 255, 0.97);
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 100px var(--spacing-md) var(--spacing-lg);
+    box-shadow: var(--shadow-lg);
+    z-index: var(--z-index-fixed);
+    overflow-y: auto;
+  }
+
+  /* FIXED: Better dark mode mobile menu */
+  .dark-theme .navbar-menu {
+    background-color: rgba(26, 26, 26, 0.97);
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    width: 100%;
+    height: auto;
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .nav-link-container {
+    width: 100%;
+    height: auto;
+  }
+
+  /* FIXED: Larger text on mobile for better visibility */
+  .nav-links a {
+    font-size: var(--font-size-lg);
+    width: 100%;
+    padding: var(--spacing-xs) 0;
+    height: auto;
+  }
+
+  .link-hover-indicator {
+    display: none;
+  }
+
+  /* FIXED: More distinct active state on mobile */
+  .nav-links a.active {
+    padding-left: var(--spacing-xs);
+    border-left: 3px solid var(--primary-color);
+    background-color: rgba(211, 85, 54, 0.1);
+  }
+
+  .navbar-social {
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    height: 70px;
+  }
+
+  .navbar.scrolled {
+    height: 60px;
+  }
+
+  .logo {
+    font-size: 1.25rem;
+  }
+
+  .navbar-menu {
+    width: 100%;
+    padding-top: 80px;
+  }
+}

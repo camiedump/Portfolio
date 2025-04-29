@@ -1,0 +1,147 @@
+@import "../../index.css";
+
+.button-wrapper {
+  display: inline-block;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-weight: 500;
+  border-radius: var(--border-radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  border: none;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+/* Button Variants */
+
+.button-primary {
+  background-color: var(--primary-color);
+  color: white;
+  border: 2px solid var(--primary-color);
+}
+
+.button-primary:disabled {
+  background-color: var(--text-color-lighter);
+  color: var(--text-color-light);
+  border-color: var(--text-color-lighter);
+  cursor: not-allowed;
+}
+
+.button-outline {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.button-outline:disabled {
+  border-color: var(--text-color-lighter);
+  color: var(--text-color-lighter);
+  cursor: not-allowed;
+}
+
+.button-secondary {
+  background-color: var(--secondary-color);
+  color: white;
+  border: 2px solid var(--secondary-color);
+}
+
+.button-secondary:disabled {
+  background-color: var(--text-color-lighter);
+  color: var(--text-color-light);
+  border-color: var(--text-color-lighter);
+  cursor: not-allowed;
+}
+
+.button-text {
+  background-color: transparent;
+  border: 2px solid transparent;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.button-text:disabled {
+  color: var(--text-color-lighter);
+  cursor: not-allowed;
+}
+
+/* Button Sizes */
+
+.button-small {
+  font-size: var(--font-size-sm);
+  padding: 6px 12px;
+}
+
+.button-medium {
+  font-size: var(--font-size-base);
+  padding: 8px 18px;
+}
+
+.button-large {
+  font-size: var(--font-size-md);
+  padding: 12px 24px;
+}
+
+/* Full width button */
+.button-full-width {
+  width: 100%;
+}
+
+/* Button icon */
+.button-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Shine effect for primary button */
+.button-shine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  pointer-events: none;
+}
+
+/* Dark theme adjustments */
+.dark-theme .button-outline {
+  color: var(--primary-color-light);
+  border-color: var(--primary-color-light);
+}
+
+.dark-theme .button-text {
+  color: var(--primary-color-light);
+}
+
+/* Responsive styles */
+@media (max-width: 576px) {
+  .button-small {
+    font-size: var(--font-size-xs);
+    padding: 5px 10px;
+  }
+
+  .button-medium {
+    font-size: var(--font-size-sm);
+    padding: 7px 14px;
+  }
+
+  .button-large {
+    font-size: var(--font-size-base);
+    padding: 10px 20px;
+  }
+}

@@ -1,0 +1,235 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  transition: background-color var(--transition-normal),
+    color var(--transition-normal);
+}
+
+.main-content {
+  flex: 1;
+  padding-top: 80px; /* Offset for fixed navbar */
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden; /* Prevent horizontal scroll during animations */
+}
+
+/* Page transition container */
+.page-transition {
+  position: relative;
+  width: 100%;
+}
+
+/* Loading animation with improved styling */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--bg-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-index-modal);
+}
+
+.loader-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.loader h1 {
+  margin: 0 0 var(--spacing-sm);
+  letter-spacing: 3px;
+  color: var(--primary-color);
+  font-size: var(--font-size-4xl);
+  position: relative;
+}
+
+.loader h1::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background-color: var(--primary-color);
+}
+
+.loading-bar-container {
+  width: 280px;
+  height: 6px;
+  background-color: var(--bg-color-alt);
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--border-radius-full);
+  box-shadow: var(--shadow-inner);
+}
+
+.loading-bar-progress {
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--primary-color-light)
+  );
+  border-radius: var(--border-radius-full);
+  position: relative;
+}
+
+.loading-bar-progress::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  animation: shine 2s infinite;
+}
+
+.loading-text {
+  color: var(--text-color-light);
+  font-size: var(--font-size-base);
+  margin-top: var(--spacing-md);
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.loading-dots {
+  display: inline-flex;
+  margin-left: 2px;
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Background shapes for sections */
+.bg-shape {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.shape-1 {
+  border-radius: 50%;
+}
+
+.shape-2 {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+/* Improved scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color-alt);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color-light);
+  border-radius: var(--border-radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .main-content {
+    padding-top: 70px;
+  }
+
+  .loader h1 {
+    font-size: var(--font-size-3xl);
+  }
+
+  .loading-bar-container {
+    width: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-content {
+    padding-top: 60px;
+  }
+
+  .loader h1 {
+    font-size: var(--font-size-2xl);
+  }
+
+  .loading-bar-container {
+    width: 200px;
+  }
+}
+
+/* FIXED: Ensure sections are always visible */
+.about-section,
+.projects-section,
+.blogs-section,
+.experience-section,
+.contact-section,
+.hero {
+  /* Force sections to be visible regardless of animation state */
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
+  transition: none !important;
+}
+
+/* FIXED: Make page transition immediate */
+.page-transition {
+  position: relative;
+  width: 100%;
+  /* Ensure immediate display */
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* FIXED: Loading animation with improved display */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--bg-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-index-modal);
+}
+
+/* FIXED: Ensure main content is always visible */
+.main-content {
+  flex: 1;
+  padding-top: 80px; /* Offset for fixed navbar */
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden; /* Prevent horizontal scroll during animations */
+  /* Ensure content is always visible */
+  visibility: visible !important;
+  opacity: 1 !important;
+}

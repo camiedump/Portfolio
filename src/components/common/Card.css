@@ -1,0 +1,25 @@
+.card {
+  background-color: var(--bg-color);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  position: relative;
+  transition: all var(--transition-normal);
+}
+
+/* Card elevations */
+.card-sm {
+  box-shadow: var(--shadow-sm);
+}
+
+.card-md {
+  box-shadow: var(--shadow-md);
+}
+
+.card-lg {
+  box-shadow: var(--shadow-lg);
+}
+
+/* Dark theme adjustments */
+.dark-theme .card {
+  background-color: var(--bg-color);
+}
