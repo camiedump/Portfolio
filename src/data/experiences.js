@@ -36,3 +36,15 @@ export const experiences = [
     }
     
   ];
+
+  export const certificates = [
+    {
+      id: 1,
+      title: "Student Assistant",
+      company: "Western Mindanao State University",
+      location: "Zamboanga City",
+      date: "2022 - 2023",
+      description: "Assisted in the development of client websites, learned modern frameworks and methodologies, participated in code reviews and team meetings."
+    }
+    
+  ];

@@ -63,7 +63,7 @@ const BlogList = ({ isPage = true }) => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          Latest Articles
+          Latest Blogs
         </motion.h2>
         
         <motion.div 
@@ -79,7 +79,7 @@ const BlogList = ({ isPage = true }) => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          Sharing my thoughts, experiences, and insights on software development and technology.
+          Sharing my thoughts, experiences, during our 7 days Educational Tour.
         </motion.p>
         
         <motion.div 
