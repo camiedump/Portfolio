@@ -25,7 +25,7 @@ const Contact = ({ isPage = true }) => {
   
   // Initialize EmailJS with your User ID (should ideally be stored in environment variables)
   useEffect(() => {
-    emailjs.init("twmlKseA-UsqoWhD8"); // Replace with your actual EmailJS public key
+    emailjs.init("zwkiBiS8MpN791ZVO"); // Replace with your actual EmailJS public key
   }, []);
   
   const validateForm = () => {
