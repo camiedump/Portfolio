@@ -25,7 +25,7 @@ const Contact = ({ isPage = true }) => {
   
   // Initialize EmailJS with your User ID (should ideally be stored in environment variables)
   useEffect(() => {
-    emailjs.init("YOUR_EMAILJS_PUBLIC_KEY"); // Replace with your actual EmailJS public key
+    emailjs.init("twmlKseA-UsqoWhD8"); // Replace with your actual EmailJS public key
   }, []);
   
   const validateForm = () => {
@@ -84,8 +84,8 @@ const Contact = ({ isPage = true }) => {
       // Send email using EmailJS
       // Replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with your actual EmailJS service and template IDs
       await emailjs.send(
-        'YOUR_SERVICE_ID', 
-        'YOUR_TEMPLATE_ID',
+        'service_9px6f31', 
+        'template_fao9umg',
         templateParams
       );
       
