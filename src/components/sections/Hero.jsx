@@ -65,7 +65,7 @@ const Hero = () => {
     }
   };
 
-  const titleText = "I'M CAMILLE";
+  const titleText = "I'M\u00A0CAMILLE";
 
   return (
     <section className="hero">

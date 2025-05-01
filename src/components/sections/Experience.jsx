@@ -14,9 +14,8 @@ const Experience = ({ isPage = true }) => {
     
     // Animate items one by one with delay
     let delay = 0;
-    let itemsArray = activeTab === 'work' ? experiences : activeTab === 'education' 
-    ? education 
-    : certificates;
+    let itemsArray = activeTab === 'work' ? experiences : 
+                     activeTab === 'education' ? education : certificates;
     
     itemsArray.forEach((_, index) => {
       setTimeout(() => {
@@ -30,14 +29,18 @@ const Experience = ({ isPage = true }) => {
   const getIcon = (type, company) => {
     // Work icons based on company name (for demonstration)
     if (type === 'work') {
-      if (company.toLowerCase().includes('tech')) return 'fas fa-university';
-      if (company.toLowerCase().includes('seminar') || company.toLowerCase().includes('meeting')) return 'fas fa-envelope';
-      if (company.toLowerCase().includes('university') || company.toLowerCase().includes('school')) return 'fas fa-laptop-code';
+      if (company.toLowerCase().includes('tech')) return 'fas fa-laptop-code';
+      if (company.toLowerCase().includes('university') || company.toLowerCase().includes('school')) return 'fas fa-university';
       return 'fas fa-briefcase';
     }
     
     // Education icons
-    return 'fas fa-graduation-cap';
+    if (type === 'education') {
+      return 'fas fa-graduation-cap';
+    }
+    
+    // Certificate icons
+    return 'fas fa-certificate';
   };
   
   // Tab switching animation
@@ -59,7 +62,7 @@ const Experience = ({ isPage = true }) => {
   // Indicator line animation
   const indicatorVariants = {
     work: {
-      left: "25%",
+      left: "16.67%",
       transition: {
         type: "spring",
         stiffness: 300,
@@ -67,7 +70,7 @@ const Experience = ({ isPage = true }) => {
       }
     },
     education: {
-      left: "75%",
+      left: "50%",
       transition: {
         type: "spring",
         stiffness: 300,
@@ -75,7 +78,7 @@ const Experience = ({ isPage = true }) => {
       }
     },
     certificates: {
-      left: "75%",
+      left: "83.33%",
       transition: {
         type: "spring",
         stiffness: 300,
@@ -136,14 +139,25 @@ const Experience = ({ isPage = true }) => {
             <motion.button 
               className={`tab-button ${activeTab === 'certificates' ? 'active' : ''}`}
               onClick={() => setActiveTab('certificates')}
-              aria-label="Show education"
+              aria-label="Show certificates"
               variants={tabVariants}
               animate={activeTab === 'certificates' ? 'active' : 'inactive'}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <i className="fas fa-envelope"></i> Certitificates
+              <i className="fas fa-certificate"></i> Certificates
             </motion.button>
+            
+            <motion.div 
+              className="tab-indicator"
+              variants={indicatorVariants}
+              animate={activeTab}
+              transition={{ 
+                type: "spring", 
+                stiffness: 300, 
+                damping: 30 
+              }}
+            ></motion.div>
           </div>
         </div>
         
@@ -469,7 +483,7 @@ const Experience = ({ isPage = true }) => {
                 ></motion.div>
                 
                 {certificates.length > 0 ? (
-                  certificcates.map((cert, index) => (
+                  certificates.map((cert, index) => (
                     <motion.div 
                       key={cert.id} 
                       className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'} ${animatedItems.includes(index) ? 'animate' : ''}`}
@@ -535,7 +549,7 @@ const Experience = ({ isPage = true }) => {
                           duration: 0.5
                         }}
                       >
-                        {cert.degree}
+                        {cert.title}
                       </motion.h3>
                       
                       <motion.p 
@@ -547,8 +561,8 @@ const Experience = ({ isPage = true }) => {
                           duration: 0.5
                         }}
                       >
-                        <i className="fas fa-envelope"></i>
-                        {cert.institution}
+                        <i className="fas fa-certificate"></i>
+                        {cert.issuer}
                       </motion.p>
                       
                       <motion.p 
@@ -560,8 +574,12 @@ const Experience = ({ isPage = true }) => {
                           duration: 0.5
                         }}
                       >
-                        <i className="fas fa-map-marker-alt"></i>
-                        {cert.location}
+                        <i className="fas fa-link"></i>
+                        {cert.credentialLink ? (
+                          <a href={cert.credentialLink} target="_blank" rel="noopener noreferrer">
+                            View Credential
+                          </a>
+                        ) : 'No credential link available'}
                       </motion.p>
                       
                       <motion.p 
@@ -577,7 +595,7 @@ const Experience = ({ isPage = true }) => {
                       </motion.p>
                       
                       <motion.i 
-                        className="envelope-icon"
+                        className="certificate-icon fas fa-certificate"
                         initial={{ opacity: 0, rotate: -20 }}
                         animate={{ opacity: 0.3, rotate: 0 }}
                         transition={{ 
@@ -603,8 +621,8 @@ const Experience = ({ isPage = true }) => {
                       stiffness: 200
                     }}
                   >
-                    <i className="fas fa-graduation-cap"></i>
-                    <h3>No certificate listed</h3>
+                    <i className="fas fa-certificate"></i>
+                    <h3>No certificates listed</h3>
                     <p>Certificate details will be added soon.</p>
                   </motion.div>
                 )}
