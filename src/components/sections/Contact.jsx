@@ -1,8 +1,9 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Button from '../common/Button';
 import './Contact.css';
 import { fadeIn, slideInLeft, slideInRight, softBounce, shouldAnimate } from '../../utils/animation';
+import emailjs from '@emailjs/browser';
 
 const Contact = ({ isPage = true }) => {
   const [formState, setFormState] = useState({
@@ -21,6 +22,11 @@ const Contact = ({ isPage = true }) => {
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState({});
   const formRef = useRef(null);
+  
+  // Initialize EmailJS with your User ID (should ideally be stored in environment variables)
+  useEffect(() => {
+    emailjs.init("YOUR_EMAILJS_PUBLIC_KEY"); // Replace with your actual EmailJS public key
+  }, []);
   
   const validateForm = () => {
     const newErrors = {};
@@ -59,15 +65,31 @@ const Contact = ({ isPage = true }) => {
     }
   };
   
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     
     if (!validateForm()) return;
     
     setLoading(true);
     
-    // Simulate form submission
-    setTimeout(() => {
+    // Prepare template parameters for EmailJS
+    const templateParams = {
+      from_name: formState.name,
+      from_email: formState.email,
+      subject: formState.subject,
+      message: formState.message
+    };
+    
+    try {
+      // Send email using EmailJS
+      // Replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with your actual EmailJS service and template IDs
+      await emailjs.send(
+        'YOUR_SERVICE_ID', 
+        'YOUR_TEMPLATE_ID',
+        templateParams
+      );
+      
+      // Handle success
       setLoading(false);
       setFormStatus({
         submitted: true,
@@ -96,7 +118,17 @@ const Contact = ({ isPage = true }) => {
           message: ''
         });
       }, 5000);
-    }, 1500);
+      
+    } catch (error) {
+      // Handle error
+      console.error('Email sending failed:', error);
+      setLoading(false);
+      setFormStatus({
+        submitted: true,
+        success: false,
+        message: 'Failed to send your message. Please try again later or contact me directly via email.'
+      });
+    }
   };
   
   // Contact information data

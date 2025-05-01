@@ -51,8 +51,8 @@ const Footer = () => {
   
   // Social links data
   const socialLinks = [
-    { url: 'https://github.com', icon: 'fab fa-github', label: 'GitHub' },
-    { url: 'https://linkedin.com', icon: 'fab fa-linkedin-in', label: 'LinkedIn' },
+    { url: 'https://github.com/camiedump/', icon: 'fab fa-github', label: 'GitHub' },
+    { url: 'https://www.linkedin.com/in/rosacamillelabial/', icon: 'fab fa-linkedin-in', label: 'LinkedIn' },
     { url: 'https://instagram.com', icon: 'fab fa-instagram', label: 'Instagram' },
     { url: 'https://twitter.com', icon: 'fab fa-twitter', label: 'Twitter' }
   ];
