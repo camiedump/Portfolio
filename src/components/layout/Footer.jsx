@@ -141,7 +141,7 @@ const Footer = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              A showcase of my journey, projects, and experiences in software development.
+              A showcase of my journey, projects, and experiences in UI/UX Design.
               I'm passionate about creating beautiful, functional websites and applications.
             </motion.p>
             

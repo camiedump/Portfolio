@@ -6,12 +6,12 @@ import { fadeIn, slideUp, slideInLeft, slideInRight, skillsBar, shouldAnimate } 
 
 const About = ({ isPage = true }) => {
   const skills = [
-    { name: 'HTML/CSS', level: 75, icon: 'fab fa-html5' },
-    { name: 'JavaScript', level: 50, icon: 'fab fa-js' },
-    { name: 'React', level: 60, icon: 'fab fa-react' },
-    { name: 'Figma', level: 45, icon: 'fab fa-figma' },
-    { name: 'UI/UX Design', level: 70, icon: 'fas fa-pencil-ruler' },
-    { name: 'Canva', level: 75, icon: 'fab fa-circle' },
+    { name: 'HTML/CSS', level: 45, icon: 'fab fa-html5' },
+    { name: 'JavaScript', level: 40, icon: 'fab fa-js' },
+    { name: 'React', level: 30, icon: 'fab fa-react' },
+    { name: 'Figma', level: 25, icon: 'fab fa-figma' },
+    { name: 'UI/UX Design', level: 50, icon: 'fas fa-pencil-ruler' },
+    { name: 'Canva', level: 50, icon: 'fab fa-circle' },
   ];
   
   // Custom animation for text paragraphs with staggering
@@ -63,7 +63,7 @@ const About = ({ isPage = true }) => {
               initial="hidden"
               animate="visible"
             >
-              A passionate software developer with strong foundations in both frontend and backend technologies.
+              A passionate UI/UX Designer with strong foundations in frontend technologies.
             </motion.p>
             
             <motion.p
@@ -72,7 +72,7 @@ const About = ({ isPage = true }) => {
               initial="hidden"
               animate="visible"
             >
-              I am a passionate software developer with a strong foundation in web technologies and a dedication to creating efficient, <motion.strong 
+              I am a passionate UI/UX Designer with a strong foundation in web technologies and a dedication to creating efficient, <motion.strong 
                 initial={{ color: "var(--text-color)" }}
                 animate={{ color: "var(--primary-color)" }}
                 transition={{ delay: 0.8, duration: 0.5 }}
@@ -85,7 +85,7 @@ const About = ({ isPage = true }) => {
               initial="hidden"
               animate="visible"
             >
-              With experience in both frontend and backend development, I enjoy working across the <motion.strong 
+              With experience in both frontend and backend development, I enjoy working on <motion.strong 
                 initial={{ color: "var(--text-color)" }}
                 animate={{ color: "var(--primary-color)" }}
                 transition={{ delay: 1.0, duration: 0.5 }}
@@ -98,11 +98,11 @@ const About = ({ isPage = true }) => {
               initial="hidden"
               animate="visible"
             >
-              Outside of coding, I enjoy contributing to <motion.strong 
+              Outside of coding, I enjoy <motion.strong 
                 initial={{ color: "var(--text-color)" }}
                 animate={{ color: "var(--primary-color)" }}
                 transition={{ delay: 1.2, duration: 0.5 }}
-              >open-source projects</motion.strong>, continuously expanding my knowledge through online courses and documentation.
+              >listening and learning from people with more experience than I am</motion.strong>, by continuously expanding my knowledge with also the help of online courses and documentation, I get to expand my knowledge and imagination interms of layouting and designing.
             </motion.p>
           </div>
           

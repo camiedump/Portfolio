@@ -64,7 +64,7 @@ export const experiences = [
     },
     {
       id: 4,
-      title: "ChatGPT for Cybersecurity",
+      title: "ChatGPT for Cybersecurity (1 Hour)",
       issuer: "Simplilearn",
       credentialLink: "https://simpli-web.app.link/e/kDz8WxK93Sb",
       date: "April 26, 2025",
@@ -72,7 +72,7 @@ export const experiences = [
     },
     {
       id: 5,
-      title: "Generative AI for Everyone",
+      title: "Generative AI for Everyone (4 Hours)",
       issuer: "Simplilearn",
       credentialLink: "https://simpli-web.app.link/e/AmELdo493Sb",
       date: "April 26, 2025",
@@ -80,7 +80,7 @@ export const experiences = [
     },
     {
       id: 6,
-      title: "Introduction to Forntend Development",
+      title: "Introduction to Forntend Development (12 Hours)",
       issuer: "Simplilearn",
       credentialLink: "https://simpli-web.app.link/e/4QID51793Sb",
       date: "April 26, 2025",
@@ -88,7 +88,7 @@ export const experiences = [
     },
     {
       id: 7,
-      title: "Project Management 101",
+      title: "Project Management 101 (2 Hours)",
       issuer: "Simplilearn",
       credentialLink: "https://simpli-web.app.link/e/zTVu74I93Sb",
       date: "April 26, 2025",
@@ -96,7 +96,7 @@ export const experiences = [
     },
     {
       id: 8,
-      title: "Python for Beginners",
+      title: "Python for Beginners (11 Hours)",
       issuer: "Simplilearn",
       credentialLink: "https://simpli-web.app.link/e/WkBbtYG93Sb",
       date: "April 26, 2025",
@@ -104,7 +104,7 @@ export const experiences = [
     },
     {
       id: 9,
-      title: "Salesforce admin & App Builder",
+      title: "Salesforce admin & App Builder (16 Hours)",
       issuer: "FreeCodeCamp",
       credentialLink: "https://simpli-web.app.link/e/1GdH3j993Sb",
       date: "April 26, 2025",
@@ -112,7 +112,7 @@ export const experiences = [
     },
     {
       id: 10,
-      title: "Agile Scrum Master Skill Up",
+      title: "Agile Scrum Master Skill Up (5 Hours)",
       issuer: "Simplilearn",
       credentialLink: "https://simpli-web.app.link/e/TyATHNO93Sb",
       date: "April 26, 2025",
@@ -120,7 +120,7 @@ export const experiences = [
     },
     {
       id: 11,
-      title: "Introduction to Cloud Security",
+      title: "Introduction to Cloud Security (7 Hours)",
       issuer: "Simplilearn",
       credentialLink: "https://simpli-web.app.link/e/v6Pq2TNa4Sb",
       date: "April 19, 2025",
@@ -128,7 +128,7 @@ export const experiences = [
     },
     {
       id: 12,
-      title: "Design Thingking for Beginners",
+      title: "Design Thingking for Beginners (1 hour)",
       issuer: "Simplilearn",
       credentialLink: "https://simpli-web.app.link/e/lGfmWi693Sb",
       date: "April 18, 2025",
@@ -136,7 +136,7 @@ export const experiences = [
     },
     {
       id: 13,
-      title: "Introduction to Cyber Security",
+      title: "Introduction to Cyber Security (2 Hours)",
       issuer: "Simplilearn",
       credentialLink: "https://simpli-web.app.link/e/KXw3JSSa4Sb",
       date: "April 18, 2025",
@@ -144,7 +144,7 @@ export const experiences = [
     },
     {
       id: 14,
-      title: "Reactjs for Beginners",
+      title: "Reactjs for Beginners (6 Hours)",
       issuer: "Simplilearn",
       credentialLink: "https://simpli-web.app.link/e/kVDDxC093Sb",
       date: "April 18, 2025",

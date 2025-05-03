@@ -27,7 +27,7 @@ export const projects = [
       image: "/project-ojtmis.png",
       githubLink: "*",
       liveLink: "https://mediumturquoise-shrew-168289.hostingersite.com/",
-      category: "Web Design"
+      category: "Web Application"
     },
     {
       id: 4,
