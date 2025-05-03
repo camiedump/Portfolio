@@ -5,7 +5,7 @@ export const projects = [
       description: "All-in-one Pokédex-inspired web app. Explore detailed stats, abilities, and evolutions for every creature in the Pixelmon world.",
       technologies: ["Reactjs", "JavaScript", "PokeAPI"],
       image: "/project-pixelmon.png",
-      githubLink: "*",
+      githubLink: "https://github.com/camiedump/Pixelmon.git",
       liveLink: "*",
       category: "Web Application"
     },
@@ -40,7 +40,7 @@ export const projects = [
       category: "Graphic Design"
     },
     {
-      id: 4,
+      id: 5,
       title: "Beach Party Brochure",
       description:"It’s time to unwind and turn up the fun. The beach is our dance floor, the stars our ceiling, and the ocean our backdrop. Come for the sunshine, stay for the sunset party vibes. Let’s make this summer one to remember!",
       technologies: ["Canva"],
