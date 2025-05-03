@@ -6,7 +6,7 @@ export const projects = [
       technologies: ["Reactjs", "JavaScript", "PokeAPI"],
       image: "/project-pixelmon.png",
       githubLink: "https://github.com/camiedump/Pixelmon.git",
-      liveLink: "*",
+      liveLink: "*****",
       category: "Web Application"
     },
     {
