@@ -7,7 +7,7 @@ import { textReveal, fadeIn, softBounce } from '../../utils/animation';
 const Hero = () => {
   const [typedText, setTypedText] = useState('');
   const [showCursor, setShowCursor] = useState(true);
-  const fullText = 'SOFTWARE DEVELOPER';
+  const fullText = 'UI/UX Designer';
   
   // Typing effect for the subtitle
   useEffect(() => {
