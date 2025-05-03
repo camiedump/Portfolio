@@ -3,7 +3,7 @@ import Contact from '../components/sections/Contact';
 
 const ContactPage = () => {
   useEffect(() => {
-    document.title = 'DevPortfolio | Contact';
+    document.title = 'Cam.exe | Contact';
     
     // Scroll to top when the component mounts
     window.scrollTo(0, 0);

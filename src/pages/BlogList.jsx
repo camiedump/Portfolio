@@ -3,7 +3,7 @@ import BlogList from '../components/sections/BlogList';
 
 const BlogListPage = () => {
   useEffect(() => {
-    document.title = 'DevPortfolio | Blogs';
+    document.title = 'Cam.exe | Blogs';
     
     // Scroll to top when the component mounts
     window.scrollTo(0, 0);

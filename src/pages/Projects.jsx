@@ -3,7 +3,7 @@ import Projects from '../components/sections/Projects';
 
 const ProjectsPage = () => {
   useEffect(() => {
-    document.title = 'DevPortfolio | Projects';
+    document.title = 'Cam.exe | Projects';
     
     // Scroll to top when the component mounts
     window.scrollTo(0, 0);

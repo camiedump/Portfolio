@@ -138,7 +138,7 @@ function App() {
             initial="hidden"
             animate="visible"
           >
-            DEVPORTFOLIO
+            CAM.EXE
           </motion.h1>
           
           <div className="loading-bar-container">

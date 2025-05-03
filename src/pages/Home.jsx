@@ -8,7 +8,7 @@ import Contact from '../components/sections/Contact';
 
 const Home = () => {
   useEffect(() => {
-    document.title = 'DevPortfolio | Home';
+    document.title = 'Cam.exe | Home';
   }, []);
 
   return (

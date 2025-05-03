@@ -4,7 +4,7 @@ import Experience from '../components/sections/Experience';
 
 const AboutPage = () => {
   useEffect(() => {
-    document.title = 'DevPortfolio | About';
+    document.title = 'Cam.exe | About';
     
     // Scroll to top when the component mounts
     window.scrollTo(0, 0);

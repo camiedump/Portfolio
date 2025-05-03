@@ -131,7 +131,7 @@ const Footer = () => {
               transition={{ duration: 0.5 }}
               whileHover={{ scale: 1.02 }}
             >
-              <Link to="/" className="footer-logo">DEVPORTFOLIO</Link>
+              <Link to="/" className="footer-logo">CAM.EXE</Link>
             </motion.div>
             
             <motion.p 
@@ -358,7 +358,7 @@ const Footer = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.8 }}
         >
-          <p>&copy; {currentYear} DEVPORTFOLIO. All rights reserved.</p>
+          <p>&copy; {currentYear} CAMI.EXE | All rights reserved.</p>
           <p>
             Designed and developed with <span role="img" aria-label="heart">❤️</span> by{' '}
             <motion.a 
