@@ -4,9 +4,9 @@ export const projects = [
       title: "PixelMon",
       description: "All-in-one Pokédex-inspired web app. Explore detailed stats, abilities, and evolutions for every creature in the Pixelmon world.",
       technologies: ["Reactjs", "JavaScript", "PokeAPI"],
-      image: "/pixelmon.png",
-      githubLink: "https://github.com/yourusername/ecommerce-platform",
-      liveLink: "https://ecommerce-demo-platform.netlify.app",
+      image: "/project-pixelmon.png",
+      githubLink: "*",
+      liveLink: "*",
       category: "Web Application"
     },
     {
@@ -14,19 +14,29 @@ export const projects = [
       title: "Task Manager 101",
       description: "Stay organized and take control of your day. This task manager helps you track, prioritize, and complete tasks effortlessly.",
       technologies: ["Reactjs", "JavaScript"],
-      image: "/taskman.png",
+      image: "/project-taskman.png",
       githubLink: "https://github.com/camiedump/todo-list.git",
       liveLink: "https://task-manager101.netlify.app/",
       category: "Web Application"
     },
     {
       id: 3,
+      title: "OJT Management Information System",
+      description: "A web-based system designed to efficiently monitor on-the-job training activities using QR code technology for real-time attendance tracking, task validation, and trainee progress management.",
+      technologies: ["PHP", "HTMl", "CSS", "JavaScript"],
+      image: "/project-ojtmis.png",
+      githubLink: "*",
+      liveLink: "https://mediumturquoise-shrew-168289.hostingersite.com/",
+      category: "Web Design"
+    },
+    {
+      id: 4,
       title: "Wmsu Sport Poster",
       description: "Where hustle meets heart. This is more than a game — it’s a way of life. Dedication, discipline, and drive lead the way. Play with pride, finish with no regrets.",
       technologies: ["Photoshop", "Canva"],
-      image: "/palaro.jpg",
+      image: "/project-palaro.jpg",
       githubLink: "*",
-      liveLink: "https://personal-finance-demo.netlify.app",
+      liveLink: "https://www.canva.com/design/DAGmYTLRvj0/2PX4A7M0rwANGAS2tjO_dQ/edit?utm_content=DAGmYTLRvj0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton ",
       category: "Graphic Design"
     },
     {
@@ -34,9 +44,9 @@ export const projects = [
       title: "Beach Party Brochure",
       description:"It’s time to unwind and turn up the fun. The beach is our dance floor, the stars our ceiling, and the ocean our backdrop. Come for the sunshine, stay for the sunset party vibes. Let’s make this summer one to remember!",
       technologies: ["Canva"],
-      image: "/beachparty.png",
+      image: "/project-beachparty.png",
       githubLink: "*",
-      liveLink: "https://personal-finance-demo.netlify.app",
+      liveLink: "https://www.canva.com/design/DAGRwkonF2U/BxfrNpGMXpUIbae_88OZFg/edit?utm_content=DAGRwkonF2U&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
       category: "Graphic Design"
     }
   ];

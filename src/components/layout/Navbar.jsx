@@ -133,7 +133,7 @@ const Navbar = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <Link to="/" className="logo">DEVPORTFOLIO</Link>
+            <Link to="/" className="logo">CAM.EXE</Link>
           </motion.div>
           
           <motion.div 

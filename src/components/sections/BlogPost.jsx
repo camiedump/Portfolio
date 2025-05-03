@@ -186,6 +186,7 @@ const BlogPost = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
+            onClick={() => setSelectedImage(image)} // Click to open modal
           >
             {post.images.map((image, index) => (
               <motion.div 
@@ -197,6 +198,7 @@ const BlogPost = () => {
                 whileHover="hover"
                 transition={{ delay: 0.1 * index }}
               >
+                
                 <motion.img 
                   src={image} 
                   alt={`Gallery image ${index + 1}`} 
