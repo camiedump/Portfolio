@@ -245,8 +245,8 @@ export const blogposts = [
       image: "/day5-train.jpg",
       tags: ["LRTA LINE 2", "MMDA"],
       images: [
-        "/day5-mmda.jpg", 
-        "/day5-cctvfootage.jpg",
+        "/day5-mmda1.jpg", 
+        "/day5-orient.jpeg",
         "/day5-truck.jpg",
         "/day5-ppe.jpg",
         "/day5-trailer.jpg",
