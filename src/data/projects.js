@@ -48,5 +48,16 @@ export const projects = [
       githubLink: "*",
       liveLink: "https://www.canva.com/design/DAGRwkonF2U/BxfrNpGMXpUIbae_88OZFg/edit?utm_content=DAGRwkonF2U&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
       category: "Graphic Design"
-    }
+    },
+    {
+      id: 6,
+      title: "Mr. Brew (Ecommerce)",
+      description: "A web-based system designed to efficiently monitor on-the-job training activities using QR code technology for real-time attendance tracking, task validation, and trainee progress management.",
+      technologies: ["PHP", "HTMl", "CSS"],
+      image: "/project-mrbrew.png",
+      githubLink: "*",
+      liveLink: "*",
+      category: "Web Application"
+    },
+
   ];
