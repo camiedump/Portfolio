@@ -10,7 +10,7 @@ export const experiences = [
     {
       id: 2,
       title: "Project Manager",
-      company: "WEBAXIS",
+      company: "WEB CRAFTAXIS",
       location: "Western Mindanao State University",
       date: "2023 - 2024",
       description: "Led the planning, coordination, and execution of projects, ensuring timely delivery, team collaboration, and alignment with goals—while developing leadership, problem-solving, and communication skills."
@@ -32,7 +32,7 @@ export const experiences = [
       institution: "Western Mindanao State University",
       location: "Zamboanga City",
       date: "2020 - Present",
-      description: "Focusing on software development, web technologies, and database management, and design"
+      description: "Focusing on software development, web technologies, database management, and design"
     }
     
   ];

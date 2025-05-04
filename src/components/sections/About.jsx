@@ -72,11 +72,11 @@ const About = ({ isPage = true }) => {
               initial="hidden"
               animate="visible"
             >
-              I am a passionate UI/UX Designer with a strong foundation in web technologies and a dedication to creating efficient, <motion.strong 
+              I am Rosa Camille Labial, a 22-year-old from Zamboanga City. Focuses on designing interfaces that are both practical, visually clean, and <motion.strong 
                 initial={{ color: "var(--text-color)" }}
                 animate={{ color: "var(--primary-color)" }}
                 transition={{ delay: 0.8, duration: 0.5 }}
-              >user-friendly applications</motion.strong>. My journey in tech began during my studies at Western Mindanao State University, where I discovered my love for creating designs.
+              >user-friendly applications</motion.strong>. My journey in tech began during my studies at Western Mindanao State University, where I discovered my love for creating web designs.
             </motion.p>
             
             <motion.p
@@ -89,7 +89,7 @@ const About = ({ isPage = true }) => {
                 initial={{ color: "var(--text-color)" }}
                 animate={{ color: "var(--primary-color)" }}
                 transition={{ delay: 1.0, duration: 0.5 }}
-              >Frontend</motion.strong> to bring projects from concept to completion. I'm particularly interested in creating intuitive user interfaces and optimizing.
+              >Frontend</motion.strong> to bring projects from concept to completion. I'm particularly interested in creating intuitive user interfaces and optimizing it.
             </motion.p>
             
             <motion.p

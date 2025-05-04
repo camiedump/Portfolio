@@ -1,4 +1,4 @@
 [[redirects]]
-from ="*"
+from ="404notfound"
 to = "/index.html"
 status = 200
