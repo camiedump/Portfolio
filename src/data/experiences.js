@@ -10,7 +10,7 @@ export const experiences = [
     {
       id: 2,
       title: "Project Manager",
-      company: "WEB CRAFTAXIS",
+      company: "WEB CRAFTERAXIS",
       location: "Western Mindanao State University",
       date: "2023 - 2024",
       description: "Led the planning, coordination, and execution of projects, ensuring timely delivery, team collaboration, and alignment with goals—while developing leadership, problem-solving, and communication skills."
