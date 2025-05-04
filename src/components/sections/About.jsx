@@ -102,7 +102,7 @@ const About = ({ isPage = true }) => {
                 initial={{ color: "var(--text-color)" }}
                 animate={{ color: "var(--primary-color)" }}
                 transition={{ delay: 1.2, duration: 0.5 }}
-              >listening and learning from people with more experience than I am</motion.strong>, with the help of online courses and documentation, I also get to expand my knowledge and imagination interms of layouting and designing.
+              >listening and learning from people with more experience than I am</motion.strong>, with the help of online courses and documentation, I get to expand my knowledge and imagination interms of layouting and designing.
             </motion.p>
           </div>
           
